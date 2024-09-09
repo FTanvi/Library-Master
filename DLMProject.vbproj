@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C106E4E-CB8D-4CE4-9A15-2BA20AA3FB44}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DLMProject.My.MyApplication</StartupObject>
+    <RootNamespace>DLMProject</RootNamespace>
+    <AssemblyName>DLMProject</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DLMProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DLMProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddMissionCharges.Designer.vb">
+      <DependentUpon>AddMissionCharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddMissionCharges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddmissionReceipt.Designer.vb">
+      <DependentUpon>AddmissionReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddmissionReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddmissionReport.Designer.vb">
+      <DependentUpon>AddmissionReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddmissionReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddmissionReport1.Designer.vb">
+      <DependentUpon>AddmissionReport1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddmissionReport1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddmisssionMaster.Designer.vb">
+      <DependentUpon>AddmisssionMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddmisssionMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookReport.Designer.vb">
+      <DependentUpon>BookReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookReport1.Designer.vb">
+      <DependentUpon>BookReport1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookReport1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourseMaster.Designer.vb">
+      <DependentUpon>CourseMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CourseMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookMaster.Designer.vb">
+      <DependentUpon>BookMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DamageCharges.Designer.vb">
+      <DependentUpon>DamageCharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DamageCharges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DamageReceipt.Designer.vb">
+      <DependentUpon>DamageReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DamageReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelayCharges.Designer.vb">
+      <DependentUpon>DelayCharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DelayCharges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelayReceipt.Designer.vb">
+      <DependentUpon>DelayReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DelayReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DLMDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DLMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DLMDataSet.vb">
+      <DependentUpon>DLMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IssueBook.Designer.vb">
+      <DependentUpon>IssueBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IssueBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueReport.Designer.vb">
+      <DependentUpon>IssueReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IssueReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueReport1.Designer.vb">
+      <DependentUpon>IssueReport1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IssueReport1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReturnBook.Designer.vb">
+      <DependentUpon>ReturnBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnReport.Designer.vb">
+      <DependentUpon>ReturnReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnReport1.Designer.vb">
+      <DependentUpon>ReturnReport1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnReport1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectMaster.Designer.vb">
+      <DependentUpon>SubjectMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddMissionCharges.resx">
+      <DependentUpon>AddMissionCharges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddmissionReceipt.resx">
+      <DependentUpon>AddmissionReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddmissionReport.resx">
+      <DependentUpon>AddmissionReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddmissionReport1.resx">
+      <DependentUpon>AddmissionReport1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddmisssionMaster.resx">
+      <DependentUpon>AddmisssionMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookReport.resx">
+      <DependentUpon>BookReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookReport1.resx">
+      <DependentUpon>BookReport1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseMaster.resx">
+      <DependentUpon>CourseMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookMaster.resx">
+      <DependentUpon>BookMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DamageCharges.resx">
+      <DependentUpon>DamageCharges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DamageReceipt.resx">
+      <DependentUpon>DamageReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelayCharges.resx">
+      <DependentUpon>DelayCharges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelayReceipt.resx">
+      <DependentUpon>DelayReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueBook.resx">
+      <DependentUpon>IssueBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueReport.resx">
+      <DependentUpon>IssueReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueReport1.resx">
+      <DependentUpon>IssueReport1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <Content Include="Database1.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report5.rdlc" />
+    <EmbeddedResource Include="Report6.rdlc" />
+    <EmbeddedResource Include="Report7.rdlc" />
+    <EmbeddedResource Include="ReturnBook.resx">
+      <DependentUpon>ReturnBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnReport.resx">
+      <DependentUpon>ReturnReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnReport1.resx">
+      <DependentUpon>ReturnReport1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectMaster.resx">
+      <DependentUpon>SubjectMaster.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DLMDataSet.xsc">
+      <DependentUpon>DLMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DLMDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DLMDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DLMDataSet.xss">
+      <DependentUpon>DLMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d13.jpg" />
+    <None Include="Resources\d111.jpg" />
+    <None Include="Resources\d10.jpg" />
+    <None Include="Resources\d32.jpg" />
+    <None Include="Resources\D9.jpg" />
+    <None Include="Resources\d8.jpg" />
+    <None Include="Resources\d71.jpg" />
+    <None Include="Resources\d7.jpg" />
+    <None Include="Resources\d31.jpg" />
+    <None Include="Resources\d3.png" />
+    <None Include="Resources\d3.jpg" />
+    <None Include="Resources\d6.png" />
+    <None Include="Resources\d5.png" />
+    <None Include="Resources\avatar.png" />
+    <None Include="Resources\d4.jpg" />
+    <None Include="Resources\d3" />
+    <None Include="Resources\download.jpg" />
+    <None Include="Resources\d2.jpg" />
+    <None Include="Resources\d12.jpg" />
+    <None Include="Resources\d11.jpg" />
+    <None Include="Resources\d1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
